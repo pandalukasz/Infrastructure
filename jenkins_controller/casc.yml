@@ -77,6 +77,10 @@ credentials:
                 H39o62EuOlByI/mQAAAA1wYW5kYUB2YWdyYW50AQIDBA==
                 -----END OPENSSH PRIVATE KEY-----
           scope: GLOBAL
+jobs:
+  - file: /usr/share/jenkins/ref/jobs/backend.groovy
+  - file: /usr/share/jenkins/ref/jobs/frontend.groovy
+  - file: /usr/share/jenkins/ref/jobs/apps_of_apps.groovy
 
 tool:
   sonarRunnerInstallation:
