@@ -91,6 +91,14 @@ tool:
           installers:
           - sonarRunnerInstaller:
               id: "4.7.0.2747"
+  terraform:
+    installations:
+    - name: "Terraform"
+      properties:
+      - installSource:
+          installers:
+          - terraformInstaller:
+              id: "1.4.4-linux-amd64"
 unclassified:
   location:
     url: "http://192.168.44.44:8880/"
@@ -103,11 +111,3 @@ unclassified:
         skipScmCause: false
         skipUpstreamCause: false
 
-terraform:
-    installations:
-    - name: "Terraform"
-      properties:
-      - installSource:
-          installers:
-          - terraformInstaller:
-              id: "1.4.4-linux-amd64"
